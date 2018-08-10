@@ -125,4 +125,5 @@ sudo ntpdate -u time.nist.gov
 * 数据仓库
 
 
-
+elasticsearch5.0启动出现的错误
+https://blog.csdn.net/qq942477618/article/details/53414983

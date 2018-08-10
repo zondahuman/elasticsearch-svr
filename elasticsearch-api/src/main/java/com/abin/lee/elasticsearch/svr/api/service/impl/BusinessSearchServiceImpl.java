@@ -356,7 +356,11 @@ public class BusinessSearchServiceImpl implements BusinessSearchService {
     }
 
 
-
+    public static void main(String[] args) {
+        BoolQueryBuilder queryBuilder = QueryBuilders.boolQuery();
+        queryBuilder.should(QueryBuilders.hasParentQuery("device", QueryBuilders.matchQuery("user_id","8")));
+        queryBuilder.should(QueryBuilders.matchQuery("alarm_type","1"));
+    }
 
 
 
