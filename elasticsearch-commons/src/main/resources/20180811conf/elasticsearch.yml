@@ -1,0 +1,15 @@
+GET _search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+GET /index/_analyze?analyzer=ik_max_word&pretty=true
+{
+
+ "text":"世界如此之大，我想去看看"
+
+}
+
+PUT /index  #创建一个名字为index的索引的的索引索引
